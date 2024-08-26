@@ -7,8 +7,6 @@ import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
 import { JwtStrategy } from './jwt.strategy';
 
-const JWT_SECRET = 'jwt_secret';
-
 @Module({
   imports: [
     UserModule,
