@@ -4,7 +4,7 @@ import { Document } from 'mongoose';
 export type ProductDocument = Product & Document;
 
 @Schema()
-export class Product {
+export class Product extends Document {
   @Prop({ required: true })
   name: string;
 

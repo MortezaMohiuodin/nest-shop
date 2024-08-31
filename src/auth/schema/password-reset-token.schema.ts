@@ -4,7 +4,7 @@ import { Document } from 'mongoose';
 export type PasswordResetTokenDocument = PasswordResetToken & Document;
 
 @Schema({ timestamps: true })
-export class PasswordResetToken {
+export class PasswordResetToken extends Document {
   @Prop({ required: true })
   email: string;
 
